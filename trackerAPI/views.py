@@ -1,18 +1,11 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 
-def listings(request):
-    # if this is a POST request we need to process the request
-    if request.method == 'POST':
-        return JsonResponse({'request':'POST'})
-
-    # if a GET (or any other method) we'll return the default values
+def listings(request, filters='', category='', location=''):
     return JsonResponse({
-        'request':'GET',
-        'link':'staylateandmake.ca',
-        'image':'http://www.rona.ca/images/7402004_L.jpg',
-        'price':10,
-        'title':'Canadian flag'
+        'filters':filters,
+        'category':category,
+        'location':location
     })
 
 def categories(request):
