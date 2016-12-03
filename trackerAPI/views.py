@@ -7,7 +7,13 @@ def listings(request):
         return JsonResponse({'request':'POST'})
 
     # if a GET (or any other method) we'll return the default values
-    return JsonResponse({'request':'GET', 'link':'http://www.rona.ca/images/7402004_L.jpg', 'price':10, 'title':'Canadian flag'})
+    return JsonResponse({
+        'request':'GET',
+        'link':'staylateandmake.ca',
+        'image':'http://www.rona.ca/images/7402004_L.jpg',
+        'price':10,
+        'title':'Canadian flag'
+    })
 
 def categories(request):
     return JsonResponse({'request':'GET', 'categories':['shoes','shirts']})
