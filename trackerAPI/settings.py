@@ -25,7 +25,9 @@ SECRET_KEY = 'i&o-shir76k0g0q@f&0#orhgf-!15qe9-#um_fp2wjt3svmdpm'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'trackjiji.herokuapp.com',
+]
 
 
 # Application definition
