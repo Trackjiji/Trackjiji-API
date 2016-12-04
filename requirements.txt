@@ -1,6 +1,13 @@
 beautifulsoup4==4.4.1
 Django==1.10.4
 djangorestframework==3.5.3
+dryscrape==1.0
 gunicorn==19.6.0
 requests==2.9.1
 whitenoise==2.0.6
+qt5-default
+libqt5webkit5-dev
+build-essential
+python-lxml
+python-pip
+xvfb
